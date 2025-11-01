@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Safe Route Recommendation</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <h2>AI-Based Safe Route Recommendation System for Women</h2>
+
+    <div class="input-box">
+        <input id="start" placeholder="Enter Start Location (e.g., Chennai Central)">
+        <input id="end" placeholder="Enter Destination (e.g., Anna Nagar)">
+        <button onclick="findSafeRoute()">Find Safest Route</button>
+        <button id="startNav" onclick="startVoiceNavigation()" disabled>🎤 Start Navigation</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
